@@ -20,18 +20,18 @@
 
         for (int i = 1; i < array.Length; i++)
         {
-            if (i == array.Length - 1 && array[i] > array[i - 1])
-            {
-                Console.Write(array[i]);
-            }
-            else if (i == 1 && array[0] > array[1])
-            {
-                Console.Write($"{array[0]} ");
-            }
-            else if (array[i] > array[i - 1] &&  array[i] > array[i + 1])
+            if (array[i] > array[i - 1] &&  array[i] > array[i + 1])
             {
                 Console.Write($"{array[i]} ");
             }
+        }
+        if (array[0] > array[1])
+        {
+            Console.Write($"{array[0]} ");
+        }
+        if (array[array.Length - 1] > array[array.Length - 2]) 
+        {
+            Console.Write($"{array[array.Length - 1]} ");
         }
     }
 }
