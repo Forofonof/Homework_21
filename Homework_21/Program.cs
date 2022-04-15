@@ -22,9 +22,9 @@
         {
             Console.Write($"{array[0]} ");
         }
-        for (int i = 1; i < array.Length; i++)
+        for (int i = 1; i < array.Length - 1; i++)
         {
-            if (array[i] > array[i - 1] &&  array[i] > array[i + 1])
+            if (array[i] > array[i - 1] && array[i] > array[i + 1])
             {
                 Console.Write($"{array[i]} ");
             }
