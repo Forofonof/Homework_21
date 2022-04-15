@@ -18,6 +18,10 @@
         }
         Console.WriteLine("\n\nЛокальные максимумы:\n ");
 
+        if (array[0] > array[1])
+        {
+            Console.Write($"{array[0]} ");
+        }
         for (int i = 1; i < array.Length; i++)
         {
             if (array[i] > array[i - 1] &&  array[i] > array[i + 1])
@@ -25,11 +29,7 @@
                 Console.Write($"{array[i]} ");
             }
         }
-        if (array[0] > array[1])
-        {
-            Console.Write($"{array[0]} ");
-        }
-        if (array[array.Length - 1] > array[array.Length - 2]) 
+        if (array[array.Length - 1] > array[array.Length - 2])
         {
             Console.Write($"{array[array.Length - 1]} ");
         }
